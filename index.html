@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta name="format-detection" content="email=no"/>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+        <title>多人聊天室</title>
+<!--    <link rel="stylesheet" type="text/css" href="./style.css" /> -->
+        <!--[if lt IE 8]><script src="./json3.min.js"></script><![endif]-->
+        <script src="http://word-10062313.file.myqcloud.com/socket.io-1.4.5.js"></script>
+        <script type="text/javascript" src="client.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="2" class="big_box_body">
+            <div class="out_login">
+               <div class="username" id="username" style="float:left"></div>
+               <input style="float:left" type="button" onclick='out()' value="退出登录"> 
+            </div>
+         </br>
+         </br>
+         </br>
+         </br>
+         </br>
+         </br>
+         <div class="big_big_div">
+            <div class="big_div" id="big_div">
+                 <div id="login_message" class="login_message">
+                      <div class="login_message_div" id="login_message_div">
+                      </div>
+                 </div>
+                 <div id="message" class="message"></div>
+                 <div id="message_send" class="message_send">
+                         <input class="send_input_text" type="test" id="a" placeholder="输入内容" />
+                         <input class="send_input_button" type="button" id="b" value="提交" onclick="aaa()"/>
+                      <input class="clean_window" type="button" value="清屏" onclick="clean_window()"/>
+                 </div>
+            </div>
+            <div class="user_list">
+                <div class="user_list_header">
+                    <div>在线用户</div>
+                </div>
+                <div id="user_list_body" class="user_list_body"></div>
+                <div id="user_num" class="user_num"></div>
+            </div>
+         </div>
+
+    </div>
+    <div id="1" class="login_big_div">
+        <div class="login">
+              <input id="e" type="test" placeholder="输入名字"/>
+              <input id="d" type="button" value="登录" onclick="bbb()"/>
+        </div>
+    </div>
+</body>
+</html>
